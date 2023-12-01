@@ -8,7 +8,7 @@ Flutter demo to show how to code from Figma wireframes
 
 | Figma | Flutter |
 | -------------- | -------------- |
-| <img src="https://raw.githubusercontent.com/Prayag-X/LG-UI-Demo/main/readme_assets/Figma.png"> | <img src="https://raw.githubusercontent.com/Prayag-X/LG-UI-Demo/main/readme_assets/Screenshot.png"> |
+| <img src="https://raw.githubusercontent.com/Prayag-X/LG-UI-Demo/main/readme_assets/Figma%20Wireframe.png"> | <img src="https://raw.githubusercontent.com/Prayag-X/LG-UI-Demo/main/readme_assets/Screenshot.png"> |
 
 # Setting up locally
 
