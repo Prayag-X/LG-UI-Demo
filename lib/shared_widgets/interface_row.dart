@@ -28,6 +28,7 @@ class _InterfaceRowState extends ConsumerState<InterfaceRow> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       mainAxisSize: MainAxisSize.max,
       children: [
+        //Don't show the button when its the first page
         page != 1
             ? ThemedButton(
                 height: Constants.barSize,
@@ -41,6 +42,8 @@ class _InterfaceRowState extends ConsumerState<InterfaceRow> {
                 height: Constants.barSize,
                 width: Constants.barSize * 2.5,
               ),
+
+        //Central dots to show the page number
         SizedBox(
             height: 25,
             child: ListView.builder(
@@ -61,6 +64,8 @@ class _InterfaceRowState extends ConsumerState<InterfaceRow> {
                 ),
               ),
             )),
+
+        //Don't show the button when its the last page
         page != Constants.totalPages
             ? ThemedButton(
                 height: Constants.barSize,

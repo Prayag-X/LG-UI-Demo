@@ -31,16 +31,21 @@ class _LeftBarState extends ConsumerState<LeftBar> {
       width: Constants.barSize * 1.1,
       child: Stack(
         children: [
+          //Base bar with the primary color
           SizedBox(
             height: barMaxHeight,
             width: Constants.barSize * 1.1,
           ).addBlendTheme(themes.primaryColor),
+
+          //Highlighting bar changing according to the page number
           AnimatedContainer(
-            duration: Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 500),
             curve: Curves.easeOut,
             height: barMaxHeight / (Constants.totalPages) * page,
             width: Constants.barSize * 1.1,
           ).addBlendTheme(themes.secondaryColor),
+
+          //The icons
           SizedBox(
             height: barMaxHeight,
             width: Constants.barSize * 1.1,

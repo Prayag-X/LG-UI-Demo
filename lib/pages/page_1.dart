@@ -30,19 +30,25 @@ class _Page1State extends ConsumerState<Page1> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        //Heading
         Text(
           Texts.homePageHeading,
           style: textStyleBold.copyWith(
               fontSize: 120, color: themes.primaryOppositeColor),
         ),
+
+        //Body
         Row(
           children: [
+            //Texts
             Expanded(
                 child: Text(Texts.homePageContent,
                     textAlign: TextAlign.justify,
                     style: textStyleNormal.copyWith(
                         color: themes.secondaryOppositeColor, fontSize: 33))),
             Constants.surroundPadding.pw,
+
+            //Logo
             const LogoShower(
               logo: Images.lgLogo,
               height: 400,

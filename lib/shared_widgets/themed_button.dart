@@ -39,7 +39,10 @@ class _ThemedButtonState extends ConsumerState<ThemedButton> {
   Widget build(BuildContext context) {
     Themes themes = ref.watch(themesProvider);
     return IgnorePointer(
+      //Enabling or disabling the button
       ignoring: !widget.enabled,
+
+      //Hover effect
       child: MouseRegion(
         onEnter: (_) => setState(() => isHovered = true),
         onExit: (_) => setState(() => isHovered = false),
@@ -52,6 +55,8 @@ class _ThemedButtonState extends ConsumerState<ThemedButton> {
               borderRadius: BorderRadius.circular(Constants.roundness),
             ),
           ),
+
+          //On pressed
           onPressed: () => widget.onPressed(),
           child: SizedBox(
             height: widget.height,
@@ -60,12 +65,14 @@ class _ThemedButtonState extends ConsumerState<ThemedButton> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                //Icon
                 Icon(
                   widget.icon,
                   size: 50,
                   color: themes.primaryOppositeColor,
                 ),
                 25.pw,
+                //Name
                 Text(
                   widget.name,
                   style: textStyleNormal.copyWith(

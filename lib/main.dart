@@ -5,7 +5,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'pages/homepage.dart';
 
 void main() async {
+  //Initialise the Flutter Engine
   WidgetsFlutterBinding.ensureInitialized();
+
+  //Set up the display of the app
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
@@ -24,6 +27,8 @@ class Routes extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
+
+        //Write other routes here
         // '/AnotherPage': (context) => const AnotherPage(),
       },
     );

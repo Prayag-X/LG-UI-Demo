@@ -28,35 +28,45 @@ class HomePage extends ConsumerStatefulWidget {
 class _HomePageState extends ConsumerState<HomePage> {
   @override
   Widget build(BuildContext context) {
+    //Listening to the providers
     Themes themes = ref.watch(themesProvider);
     int page = ref.watch(pageProvider);
+
     return Scaffold(
       backgroundColor: themes.backgroundColor,
       body: Container(
         height: screenSize(context).height,
         width: screenSize(context).width,
         decoration: const BoxDecoration(
+          //Background Image
           image: DecorationImage(
               image: AssetImage(Images.background),
               fit: BoxFit.cover,
               opacity: 0.15),
         ),
         child: Padding(
+          //Padding around the screen
           padding: const EdgeInsets.all(Constants.surroundPadding),
           child: Column(
             children: [
+              //The topmost bar
               const ThemedAppBar(),
+
               Constants.surroundPadding.ph,
               Expanded(
                 child: Row(
                   children: [
+                    //Left Bar
                     const LeftBar(),
                     (Constants.surroundPadding * 1.2).pw,
+
+                    //Content of the page
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.only(
                             top: Constants.surroundPadding),
                         child: (() {
+                          //Decides which page to show based upon the provider value
                           if (page == 2) {
                             return const Page2();
                           }

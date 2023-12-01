@@ -22,6 +22,8 @@ class _ThemedAppBarState extends ConsumerState<ThemedAppBar> {
   @override
   Widget build(BuildContext context) {
     Themes themes = ref.watch(themesProvider);
+
+    //Dividing the sections according the the ratio
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [

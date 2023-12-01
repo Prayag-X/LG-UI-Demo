@@ -6,8 +6,13 @@ extension CustomContainerDecoration on Widget {
   Container addBlendTheme(Color parentColor) {
     return Container(
       decoration: BoxDecoration(
+        //Color of the container
         color: parentColor.withOpacity(0.7),
+
+        //Roundness
         borderRadius: BorderRadius.circular(Constants.roundness),
+
+        //Shadow of the same parent color
         boxShadow: [
           BoxShadow(
             color: parentColor,
@@ -16,6 +21,8 @@ extension CustomContainerDecoration on Widget {
           ),
         ],
       ),
+
+      //The original widget on which it is called
       child: this,
     );
   }
