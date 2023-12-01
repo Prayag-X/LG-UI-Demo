@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lg_ui_demo/extensions/blending_theme.dart';
-import 'package:lg_ui_demo/extensions/spacing.dart';
-import 'package:lg_ui_demo/providers/page_providers.dart';
-import 'package:lg_ui_demo/shared_widgets/themed_button.dart';
-import 'package:lg_ui_demo/utils/logo_shower.dart';
 
+import '../extensions/spacing.dart';
+import '../utils/logo_shower.dart';
 import '../constants/constants.dart';
 import '../constants/images.dart';
 import '../constants/texts.dart';

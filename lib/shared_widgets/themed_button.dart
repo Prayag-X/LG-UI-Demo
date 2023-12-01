@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lg_ui_demo/constants/texts.dart';
-import 'package:lg_ui_demo/extensions/blending_theme.dart';
-import 'package:lg_ui_demo/extensions/spacing.dart';
 
+import '../constants/texts.dart';
+import '../extensions/blending_theme.dart';
+import '../extensions/spacing.dart';
 import '../constants/constants.dart';
 import '../constants/themes.dart';
 import '../providers/settings_providers.dart';

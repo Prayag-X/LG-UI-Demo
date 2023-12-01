@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lg_ui_demo/extensions/blending_theme.dart';
-import 'package:lg_ui_demo/extensions/spacing.dart';
-import 'package:lg_ui_demo/pages/page_1.dart';
-import 'package:lg_ui_demo/pages/page_2.dart';
-import 'package:lg_ui_demo/pages/page_3.dart';
-import 'package:lg_ui_demo/pages/page_4.dart';
-import 'package:lg_ui_demo/shared_widgets/interface_row.dart';
 
+import '../extensions/spacing.dart';
+import '../pages/page_1.dart';
+import '../pages/page_2.dart';
+import '../pages/page_3.dart';
+import '../pages/page_4.dart';
 import '../constants/constants.dart';
 import '../constants/images.dart';
-import '../constants/texts.dart';
 import '../constants/themes.dart';
 import '../providers/page_providers.dart';
 import '../providers/settings_providers.dart';
